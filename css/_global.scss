@@ -1,0 +1,17 @@
+@import "fonts";
+@import "color";
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1.3;
+    font-family: $font-page;
+    font-size: 16px;
+}
