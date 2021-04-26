@@ -1,0 +1,13 @@
+
+@mixin logoHero {
+    .logo {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding: 20px 107px 15px 107px;
+  
+      img {
+        width: 165px;
+      }
+    }
+  }
