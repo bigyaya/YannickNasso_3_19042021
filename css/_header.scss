@@ -1,0 +1,78 @@
+@import "global";
+@import "color";
+
+
+@mixin logoHero {
+    .logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 20px 107px 15px 107px;
+
+        img{
+            width: 165px;
+        }
+    }
+}
+
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px 107px 15px 107px;
+    img{
+        width: 165px;
+    }
+}
+
+.localisation{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 0.68rem;
+    font-weight: bold;
+    padding: 15px 135px 15px 105px;
+    background: rgb(234, 234, 234);
+    box-shadow: inset 0 2px 0 0 rgb(213, 213, 213);
+
+}
+
+
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background: rgb(246, 246, 246);
+    padding: 40px 30px 50px 20px;
+    h1{
+        width: 65%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+    }
+    p {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 0.9rem;
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+    .btn_hero{
+        padding: 15px;
+        width: 220px;
+        border-radius: 30px;
+        border: transparent;
+        margin: 0 auto;
+        background: linear-gradient(to top, $primaire, $secondaire);
+        color: #fff;
+        letter-spacing: 0.030rem;
+    }
+}
+
