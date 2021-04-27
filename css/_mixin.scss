@@ -1,13 +1,33 @@
+@mixin logoHero() {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px 107px 15px 107px;
 
-@mixin logoHero {
-    .logo {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      padding: 20px 107px 15px 107px;
-  
-      img {
-        width: 165px;
-      }
-    }
+  img {
+    width: 165px;
   }
+}
+
+@mixin btn() {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  width: 100%;
+  border-radius: 15px;
+  border: transparent;
+  margin: 25px 30px;
+  background: $gris;
+  color: #000;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 25px 20px;
+  letter-spacing: 0.01rem;
+  box-shadow: 2px 4px 7px 0px rgb(192, 191, 191);
+}
+
+@mixin icon() {
+  width: 20px;
+  height: 15px;
+}
