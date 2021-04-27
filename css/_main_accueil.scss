@@ -2,6 +2,7 @@
 @import "color";
 @import "image";
 @import "mixin";
+
 h2 {
   margin-bottom: 35px;
 }
@@ -45,3 +46,72 @@ h2 {
     counter-increment: number;
   }
 }
+
+.resto {
+  padding: 60px 0px 0px 0px;
+  background: $gris;
+  height: auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  box-shadow: $shadow;
+  border-radius: 20px;
+  .card_img {
+    object-fit: cover;
+    width: 100%;
+    height: 175px;
+    margin: 0 auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  .card_info {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    padding-top: 5px;
+    color: #277460;
+    background: $tertiaire;
+    border: solid 1px $tertiaire;
+    font-size: 0.9rem;
+    border-radius: 2px;
+  }
+}
+
+
+h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+h4 {
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+
+
+
+.card_body {
+    position: relative;
+    i.far.fa-heart{
+        position: absolute;
+      width: 20px;
+      height: 25px;
+      right: 25px;
+      bottom: 0;
+      background: url(/image/heart-regular.svg) no-repeat;
+      color: royalblue;
+    }
+  }
+
+  i.far.fa-heart::before{
+      display: none;
+  }

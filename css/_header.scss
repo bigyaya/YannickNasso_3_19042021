@@ -2,6 +2,8 @@
 @import "color";
 
 
+
+
 .logo {
   display: flex;
   flex-direction: row;
@@ -66,6 +68,7 @@
     background: linear-gradient(to top, $primaire, $secondaire);
     color: #fff;
     letter-spacing: 0.03rem;
+    box-shadow: $shadow;
     a {
       padding: 10px 10px;
     }
