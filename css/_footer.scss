@@ -3,20 +3,51 @@
 @import "image";
 @import "mixin";
 
-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    background: #353535;
-    color: #fff;
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: auto;
+  background: #353535;
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  .footer_logo img {
+    width: 135px;
+    color: red;
+  }
+  .footer_link_container{
+      width: 100%;
+      height: auto;
+  }
+  .footer_link{
+      display: flex;
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+      justify-content: space-evenly;
+    padding: 0;
+    list-style: none;
+    li{
+        margin-bottom: 5px;
+    }
+  }
+  .footer_icon {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    .fa-utensils {
+     margin-right: 20px;
+    }
+    .fa-hands-helping{
+        margin-right: 10px;
+    }
+  }
 }
 
-.footer .logo img{
-    width: 90px;
-    margin: 5px 0;
+footer h2{
+    font-family: $font-title;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    margin: 0;
 }
-
-
-
-
