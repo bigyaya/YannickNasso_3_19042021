@@ -22,7 +22,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <script src="https://kit.fontawesome.com/84608bb9c1.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/84608bb9c1.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
@@ -34,8 +37,14 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <header >
+
+  <body >
+    <div class="loader">
+      <div class="loader_container">
+        <span class="loader-bars"><span></span></span>
+      </div>
+    </div>
+    <header class="fade_in">
       <div class="logo">
         <img src="/image/logo/ohmyfood.png" alt="logo Ohmyfood" />
       </div>
@@ -44,7 +53,7 @@
         <i class="fas fa-map-marker-alt"></i>Paris, Belleville
       </div>
 
-      <div class="hero">
+      <div class="hero  ">
         <h1>Réservez le menu qui vous convient</h1>
         <p>
           Découvrez des restaurants d'exception, séléctionnés par nos soins.
@@ -55,7 +64,7 @@
       </div>
     </header>
 
-    <main >
+    <main class="fade_in2">
       <h2>Fonctionnement</h2>
       <div class="aside__step">
         <a href="#" class="aside__button fade-2">
@@ -160,23 +169,25 @@
     </main>
 
     <footer>
-      <div class="footer">
+      <div class="footer fade_in3">
         <h2 class="logo-footer">ohmyfood</h2>
 
         <div class="footer_link_container">
           <ul class="footer_link">
-            <li><a href="#" class="footer_icon"
-              ><i class="fas fa-utensils"></i>Proposer un restaurant</a
-            ></li>
-            <li><a href="#" class="footer_icon"
-              ><i class="fas fa-hands-helping" ></i>Devenir partenaire</a
-            ></li>
+            <li>
+              <a href="#" class="footer_icon"
+                ><i class="fas fa-utensils"></i>Proposer un restaurant</a
+              >
+            </li>
+            <li>
+              <a href="#" class="footer_icon"
+                ><i class="fas fa-hands-helping"></i>Devenir partenaire</a
+              >
+            </li>
             <li><a href="#">Mention légales</a></li>
-              <li><a href="mailto:lenikya@laposte.net">Contact</a></li>
+            <li><a href="mailto:lenikya@laposte.net">Contact</a></li>
           </ul>
         </div>
-
-      
       </div>
     </footer>
   </body>

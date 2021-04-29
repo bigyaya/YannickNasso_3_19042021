@@ -1,7 +1,10 @@
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box; }
 
-body, html {
+body,
+html {
   margin: 0;
   padding: 0; }
 
@@ -14,17 +17,121 @@ body {
   height: auto;
   line-height: 1.625; }
 
-a, a:visited {
+a,
+a:visited {
   text-decoration: none;
   color: inherit; }
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
   margin: 0 20px; }
 
-*, *:before, *:after {
+.fade_in {
+  animation: fadein 2s 2s; }
+
+.fade_in2 {
+  animation: fadein2 2s 2.4s backwards; }
+
+.fade_in3 {
+  animation: fadein3 2s 2.8s backwards; }
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    transform: translateY(10px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0px); } }
+@keyframes fadein2 {
+  0% {
+    opacity: 0;
+    transform: translateY(10px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0px); } }
+@keyframes fadein3 {
+  0% {
+    opacity: 0;
+    transform: translateY(10px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0px); } }
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 10;
+  animation: load 2s forwards; }
+
+.loader_container {
+  position: absolute;
+  width: 0vw;
+  height: 0vw;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto; }
+
+@keyframes load {
+  0% {
+    visibility: visible; }
+  100% {
+    visibility: hidden; } }
+.loader-bars:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 30px;
+  background: #9356DC;
+  animation: grow 1s linear infinite; }
+
+.loader-bars:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 15px;
+  width: 10px;
+  height: 30px;
+  background: #FF79DA;
+  animation: grow 1s linear -0.5s infinite; }
+
+.loader-bars span {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 30px;
+  width: 10px;
+  height: 30px;
+  background: #99E2D0;
+  animation: grow 1s linear -0.1s infinite; }
+
+@keyframes grow {
+  0% {
+    transform: scaleY(0);
+    opacity: 0; }
+  50% {
+    transform: scaleY(1);
+    opacity: 1; }
+  100% {
+    transform: scaleY(0);
+    opacity: 0; } }
+*,
+*:before,
+*:after {
   box-sizing: border-box; }
 
-body, html {
+body,
+html {
   margin: 0;
   padding: 0; }
 
@@ -37,13 +144,114 @@ body {
   height: auto;
   line-height: 1.625; }
 
-a, a:visited {
+a,
+a:visited {
   text-decoration: none;
   color: inherit; }
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
   margin: 0 20px; }
 
+.fade_in {
+  animation: fadein 2s 2s; }
+
+.fade_in2 {
+  animation: fadein2 2s 2.4s backwards; }
+
+.fade_in3 {
+  animation: fadein3 2s 2.8s backwards; }
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    transform: translateY(10px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0px); } }
+@keyframes fadein2 {
+  0% {
+    opacity: 0;
+    transform: translateY(10px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0px); } }
+@keyframes fadein3 {
+  0% {
+    opacity: 0;
+    transform: translateY(10px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0px); } }
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 10;
+  animation: load 2s forwards; }
+
+.loader_container {
+  position: absolute;
+  width: 0vw;
+  height: 0vw;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto; }
+
+@keyframes load {
+  0% {
+    visibility: visible; }
+  100% {
+    visibility: hidden; } }
+.loader-bars:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 30px;
+  background: #9356DC;
+  animation: grow 1s linear infinite; }
+
+.loader-bars:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 15px;
+  width: 10px;
+  height: 30px;
+  background: #FF79DA;
+  animation: grow 1s linear -0.5s infinite; }
+
+.loader-bars span {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 30px;
+  width: 10px;
+  height: 30px;
+  background: #99E2D0;
+  animation: grow 1s linear -0.1s infinite; }
+
+@keyframes grow {
+  0% {
+    transform: scaleY(0);
+    opacity: 0; }
+  50% {
+    transform: scaleY(1);
+    opacity: 1; }
+  100% {
+    transform: scaleY(0);
+    opacity: 0; } }
 .logo {
   display: flex;
   flex-direction: row;
@@ -257,6 +465,12 @@ h4 {
       opacity: 1;
       z-index: 999; }
 
+@media screen and (min-width: 1024px) {
+  .aside__step {
+    margin: 0 305px; }
+
+  .aside__circle {
+    display: none; } }
 .footer {
   display: flex;
   flex-direction: column;

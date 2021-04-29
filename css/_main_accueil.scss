@@ -156,3 +156,13 @@ h4 {
     }
   }
 }
+
+
+@media screen and (min-width: 1024px){
+  .aside__step{
+    margin: 0 305px;
+  }
+  .aside__circle{
+    display: none;
+  }
+}
