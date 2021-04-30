@@ -101,7 +101,7 @@ h4 {
   left: 15px;
   width: 10px;
   height: 30px;
-  background: #FF79DA;
+  background: #99E2D0;
   animation: grow 1s linear -0.5s infinite; }
 
 .loader-bars span {
@@ -112,7 +112,7 @@ h4 {
   left: 30px;
   width: 10px;
   height: 30px;
-  background: #99E2D0;
+  background: #FF79DA;
   animation: grow 1s linear -0.1s infinite; }
 
 @keyframes grow {
@@ -228,7 +228,7 @@ h4 {
   left: 15px;
   width: 10px;
   height: 30px;
-  background: #FF79DA;
+  background: #99E2D0;
   animation: grow 1s linear -0.5s infinite; }
 
 .loader-bars span {
@@ -239,7 +239,7 @@ h4 {
   left: 30px;
   width: 10px;
   height: 30px;
-  background: #99E2D0;
+  background: #FF79DA;
   animation: grow 1s linear -0.1s infinite; }
 
 @keyframes grow {
@@ -483,13 +483,11 @@ h4 {
 @media screen and (min-width: 1024px) {
   .aside__step {
     margin: 0 305px; }
-
-  .aside__circle {
-    /* display: none; */
-    left: 330px; }
-
-  .aside__button:first-child {
-    margin-top: 50px; }
+    .aside__step .aside__circle {
+      /* display: none; */
+      left: 330px; }
+    .aside__step .aside__button:first-child {
+      margin-top: 50px; }
 
   .card_container {
     display: flex;
@@ -497,14 +495,12 @@ h4 {
     justify-content: space-evenly;
     width: 100%;
     height: auto; }
-
-  .card {
-    margin-bottom: 100px;
-    width: 55%;
-    height: 500px; }
-
-  .card .card_img {
-    height: 415px; }
+    .card_container .card {
+      margin-bottom: 100px;
+      width: 55%;
+      height: 500px; }
+    .card_container .card .card_img {
+      height: 415px; }
 
   h2 {
     font-size: 2rem; } }
