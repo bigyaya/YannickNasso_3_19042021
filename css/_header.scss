@@ -1,5 +1,6 @@
 @import "global";
 @import "color";
+@import "mixin";
 
 .logo {
   display: flex;
@@ -72,8 +73,23 @@
   }
 }
 
-@media screen and (min-width: 680px) {
+.menu_img {
+  object-fit: cover;
+  width: 100%;
+  height: 290px;
+  margin: 0 auto;
+  z-index: 0;
+}
 
+.main{
+  @include padMain();
+}
+
+.main h1{
+  font-family: $font-title;
+}
+
+@media screen and (min-width: 680px) {
   .logo {
     background-color: $tertiaire;
   }
@@ -87,8 +103,8 @@
         rgba(0, 0, 0, 0.92),
         rgba(54, 54, 54, 0.5) 39.24%,
         rgba(28, 28, 28, 0.4)
-        ),
-        fixed url(/image/restaurants/michael-browning-MtqG1lWcUw0-unsplash.jpg)
+      ),
+      fixed url(/image/restaurants/michael-browning-MtqG1lWcUw0-unsplash.jpg)
         center center / cover no-repeat;
     color: #fff;
     height: 700px;
@@ -119,3 +135,5 @@
     height: 430px;
   }
 }
+
+/* HEADER DES PAGES MENU */

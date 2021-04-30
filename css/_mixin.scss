@@ -9,6 +9,30 @@
   }
 }
 
+@mixin padMain(){
+  margin-top: -50px ;
+  padding: 0 20px 0 20px;
+  width: 100%;
+  height: auto;
+  background: $gris;
+}
+
+@mixin button() {
+  flex: 1 0 auto;
+  margin-bottom: 20px;
+  text-decoration: none;
+  background: #e9e9e9;
+  border-radius: 15px;
+  text-align: justify;
+  margin: 15px 35px;
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  color: #000;
+  font-weight: bold;
+  padding: 20px 15px;
+  box-shadow: 0 5px 15px 0 #c3c3c3;
+}
+/* 
 @mixin btn() {
   position: relative;
   display: flex;
@@ -25,7 +49,7 @@
   padding: 25px 20px;
   letter-spacing: 0.01rem;
   box-shadow: 2px 4px 7px 0px rgb(216, 216, 216);
-}
+} */
 
 @mixin icon() {
   width: 20px;
