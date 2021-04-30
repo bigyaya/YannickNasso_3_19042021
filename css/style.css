@@ -315,6 +315,9 @@ h4 {
       padding: 10px 10px; }
 
 @media screen and (min-width: 680px) {
+  .logo {
+    background-color: #99E2D0; }
+
   .localisation {
     display: none; }
 
@@ -443,6 +446,8 @@ h4 {
     border: solid 1px #99E2D0;
     font-size: 0.9rem;
     border-radius: 2px; }
+  .card:last-child {
+    margin-bottom: 60px; }
 
 .card_body {
   position: relative; }
@@ -475,11 +480,8 @@ h4 {
   h2 {
     text-align: center; }
 
-  .logo {
-    background-color: rgba(153, 226, 208, 0.5); }
-
   .aside__step {
-    background-color: rgba(153, 226, 208, 0.5); } }
+    background-color: rgba(255, 121, 218, 0.5); } }
 @media screen and (min-width: 1024px) {
   .aside__step {
     margin: 0 305px; }
@@ -488,6 +490,8 @@ h4 {
       left: 330px; }
     .aside__step .aside__button:first-child {
       margin-top: 50px; }
+    .aside__step .aside__texte {
+      font-size: 18px; }
 
   .card_container {
     display: flex;
