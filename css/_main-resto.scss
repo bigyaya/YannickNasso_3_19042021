@@ -1,0 +1,22 @@
+@import "global";
+@import "color";
+@import "fonts";
+@import "mixin";
+@import "footer";
+
+.main{
+    position: absolute;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    @include padMain();
+    h1{
+     font-family: $font-title;
+     font-size: 1.7rem;
+    }
+}
+.card_body .like{
+  bottom: 12px;
+}
+
+
+  

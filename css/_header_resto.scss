@@ -1,0 +1,18 @@
+@import "global";
+@import "color";
+@import "mixin";
+
+
+
+header{
+    position: relative;
+    z-index: 0;
+  }
+  
+  .menu_img {
+    object-fit: cover;
+    width: 100%;
+    height: 290px;
+    margin: 0 auto;
+  }
+  
