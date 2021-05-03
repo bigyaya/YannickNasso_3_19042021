@@ -14,7 +14,6 @@
   padding: 0 20px 0 20px;
   width: 100%;
   height: auto;
-  background: $gris;
   z-index: 1;
 }
 
@@ -32,6 +31,18 @@
   font-weight: bold;
   padding: 20px 15px;
   box-shadow: 0 5px 15px 0 #c3c3c3;
+}
+
+@mixin btn_color(){
+  padding: 15px;
+    width: 220px;
+    border-radius: 30px;
+    border: transparent;
+    margin: 0 auto;
+    background: linear-gradient(to top, $primaire, $secondaire);
+    color: #fff;
+    letter-spacing: 0.03rem;
+    box-shadow: $shadow;
 }
 
 /* 
