@@ -22,7 +22,7 @@ a:visited {
   text-decoration: none;
   color: inherit; }
 
-h2,
+h2, .menu_container h2.plats, .menu_container h2.dessert,
 h3,
 h4 {
   margin: 0 20px; }
@@ -133,6 +133,20 @@ i.fas.fa-arrow-left {
   100% {
     transform: scaleY(0);
     opacity: 0; } }
+/* 
+@keyframes price {
+  0%{
+    transform: translateX(0px);
+  }
+  100%{
+    transform: translateX(-50px);
+  }
+} */
+@keyframes checkbox {
+  0% {
+    transform: scaleX(0); }
+  100% {
+    transform: scaleX(1); } }
 *,
 *:before,
 *:after {
@@ -157,7 +171,7 @@ a:visited {
   text-decoration: none;
   color: inherit; }
 
-h2,
+h2, .menu_container h2.plats, .menu_container h2.dessert,
 h3,
 h4 {
   margin: 0 20px; }
@@ -268,6 +282,20 @@ i.fas.fa-arrow-left {
   100% {
     transform: scaleY(0);
     opacity: 0; } }
+/* 
+@keyframes price {
+  0%{
+    transform: translateX(0px);
+  }
+  100%{
+    transform: translateX(-50px);
+  }
+} */
+@keyframes checkbox {
+  0% {
+    transform: scaleX(0); }
+  100% {
+    transform: scaleX(1); } }
 /* 
 @mixin btn() {
   position: relative;
@@ -402,7 +430,7 @@ i.fa-map-marker-alt {
   letter-spacing: 0.01rem;
   box-shadow: 2px 4px 7px 0px rgb(216, 216, 216);
 } */
-h2 {
+h2, .menu_container h2.plats, .menu_container h2.dessert {
   margin-bottom: 35px; }
 
 h3 {
@@ -543,7 +571,7 @@ h2#restaurant {
       z-index: 9; }
 
 @media screen and (min-width: 680px) {
-  h2 {
+  h2, .menu_container h2.plats, .menu_container h2.dessert {
     text-align: center; }
 
   .aside__step {
@@ -575,7 +603,7 @@ h2#restaurant {
         transform: scale(1.03, 1.03);
         transition: 2s; }
 
-  h2 {
+  h2, .menu_container h2.plats, .menu_container h2.dessert {
     font-size: 2rem; } }
 /* 
 @mixin btn() {
@@ -629,14 +657,14 @@ h2#restaurant {
     .footer .footer_icon .fa-hands-helping {
       margin-right: 10px; }
 
-footer h2 {
+footer h2, footer .menu_container h2.plats, .menu_container footer h2.plats, footer .menu_container h2.dessert, .menu_container footer h2.dessert {
   font-family: "Shrikhand";
   letter-spacing: 1px;
   font-size: 1.2rem;
   margin: 0; }
 
 @media screen and (min-width: 680px) {
-  footer h2 {
+  footer h2, footer .menu_container h2.plats, .menu_container footer h2.plats, footer .menu_container h2.dessert, .menu_container footer h2.dessert {
     font-size: 2.2rem; }
 
   .footer {
@@ -686,7 +714,7 @@ a:visited {
   text-decoration: none;
   color: inherit; }
 
-h2,
+h2, .menu_container h2.plats, .menu_container h2.dessert,
 h3,
 h4 {
   margin: 0 20px; }
@@ -798,6 +826,20 @@ i.fas.fa-arrow-left {
     transform: scaleY(0);
     opacity: 0; } }
 /* 
+@keyframes price {
+  0%{
+    transform: translateX(0px);
+  }
+  100%{
+    transform: translateX(-50px);
+  }
+} */
+@keyframes checkbox {
+  0% {
+    transform: scaleX(0); }
+  100% {
+    transform: scaleX(1); } }
+/* 
 @mixin btn() {
   position: relative;
   display: flex;
@@ -867,14 +909,14 @@ i.fas.fa-arrow-left {
     .footer .footer_icon .fa-hands-helping {
       margin-right: 10px; }
 
-footer h2 {
+footer h2, footer .menu_container h2.plats, .menu_container footer h2.plats, footer .menu_container h2.dessert, .menu_container footer h2.dessert {
   font-family: "Shrikhand";
   letter-spacing: 1px;
   font-size: 1.2rem;
   margin: 0; }
 
 @media screen and (min-width: 680px) {
-  footer h2 {
+  footer h2, footer .menu_container h2.plats, .menu_container footer h2.plats, footer .menu_container h2.dessert, .menu_container footer h2.dessert {
     font-size: 2.2rem; }
 
   .footer {
@@ -931,12 +973,29 @@ footer h2 {
   flex-direction: row;
   width: 100%;
   padding-bottom: 20px; }
+  .menu_card:hover .menu_price {
+    /* animation: price 0.3s ease-out 1; */
+    transform: translateX(-60px);
+    transition: 0.5s ease-out; }
+  .menu_card:hover .menu_price-checkbox {
+    animation: checkbox 0.5s ease-out forwards;
+    transform: scale(0);
+    transform-origin: right;
+    overflow: visible;
+    /* transform: translateX(-70px);
+    transition: 0.3s ease-out;
+    overflow: visible; */ }
+  .menu_card:hover .btn-circle {
+    animation: check ease-out;
+    transform: rotate(0deg);
+    transition: transform 0.6s; }
   .menu_card .menu_title {
     padding: 0;
     margin: 0;
     width: 100%;
     height: 75px;
-    background: #fff; }
+    background: #fff;
+    cursor: pointer; }
     .menu_card .menu_title h3 {
       font-size: 1rem;
       padding-top: 10px; }
@@ -952,13 +1011,36 @@ footer h2 {
     left: -50px;
     top: 35px;
     font-weight: bold;
-    /* background: red; */
+    background: #fff;
     width: 20%;
-    height: 40px; }
+    height: 30px;
+    /*  &:hover{
+      transform: translateX(-50px);
+      transition: 0.3s ease-in-out;
+    } */ }
+    .menu_card .menu_price span {
+      margin: 0 10px; }
+  .menu_card .menu_price-checkbox {
+    position: relative;
+    /* right: 40px; */
+    right: 110px;
+    background-color: #99E2D0;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    overflow: hidden;
+    /*  &:hover{
+      transform: translateX(-50px);
+      transition: 0.3s ease-in-out;
+    } */ }
+  .menu_card .btn-circle {
+    transform: rotate(-180deg); }
 
-.aside__button.aside__button:hover {
-  background: #fff;
-  box-shadow: 2px 2px 10px 2px #d6d5d6; }
+i.fas.fa-check-circle {
+  position: relative;
+  top: 25px;
+  color: #fff;
+  padding: 0px 20px;
+  opacity: 1; }
 
 .btn_order {
   display: flex;
@@ -978,6 +1060,10 @@ footer h2 {
     .btn_order .commander a {
       padding: 10px 60px;
       font-family: "Roboto"; }
+
+.aside__button.aside__button:hover {
+  background: #fff;
+  box-shadow: 2px 2px 10px 2px #d6d5d6; }
 
 *,
 *:before,
@@ -1003,7 +1089,7 @@ a:visited {
   text-decoration: none;
   color: inherit; }
 
-h2,
+h2, .menu_container h2.plats, .menu_container h2.dessert,
 h3,
 h4 {
   margin: 0 20px; }
@@ -1114,6 +1200,20 @@ i.fas.fa-arrow-left {
   100% {
     transform: scaleY(0);
     opacity: 0; } }
+/* 
+@keyframes price {
+  0%{
+    transform: translateX(0px);
+  }
+  100%{
+    transform: translateX(-50px);
+  }
+} */
+@keyframes checkbox {
+  0% {
+    transform: scaleX(0); }
+  100% {
+    transform: scaleX(1); } }
 /* 
 @mixin btn() {
   position: relative;

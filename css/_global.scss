@@ -35,13 +35,11 @@ h4 {
   margin: 0 20px;
 }
 
-
-
 i.fas.fa-arrow-left {
   position: relative;
   font-size: 1.5rem;
   right: 65px;
-  &:hover{
+  &:hover {
     transform: translateX(-5px);
     transition: 0.3s ease-in-out;
   }
@@ -175,3 +173,23 @@ i.fas.fa-arrow-left {
     opacity: 0;
   }
 }
+/* 
+@keyframes price {
+  0%{
+    transform: translateX(0px);
+  }
+  100%{
+    transform: translateX(-50px);
+  }
+} */
+
+@keyframes checkbox {
+  0% {
+    transform: scaleX(0)
+  }
+  100% {
+    transform: scaleX(1);
+  }
+  
+}
+

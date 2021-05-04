@@ -27,8 +27,8 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  
-   h2.entree {
+
+  h2.entree {
     margin: 0;
     padding-bottom: 30px;
     text-transform: uppercase;
@@ -43,15 +43,16 @@
       height: 4px;
       background: $tertiaire;
     }
-  }h2.plats{
-    @extend h2.entree;
-    &::after{
+  }
+  h2.plats {
+    @extend h2, .entree;
+    &::after {
       right: 55px;
     }
   }
-  h2.dessert{
-    @extend h2.entree;
-    &::after{
+  h2.dessert {
+    @extend h2, .entree;
+    &::after {
       right: 80px;
     }
   }
@@ -62,12 +63,32 @@
   flex-direction: row;
   width: 100%;
   padding-bottom: 20px;
+  &:hover .menu_price {
+    /* animation: price 0.3s ease-out 1; */
+    transform: translateX(-60px);
+    transition: 0.5s ease-out;
+  }
+  &:hover .menu_price-checkbox {
+    animation: checkbox 0.5s ease-out forwards;
+    transform: scale(0);
+    transform-origin: right;
+    overflow: visible;
+    /* transform: translateX(-70px);
+    transition: 0.3s ease-out;
+    overflow: visible; */
+  }
+  &:hover .btn-circle {
+    animation: check ease-out;
+    transform: rotate(0deg);
+    transition: transform 0.6s;
+  }
   .menu_title {
     padding: 0;
     margin: 0;
     width: 100%;
     height: 75px;
     background: #fff;
+    cursor: pointer;
     h3 {
       font-size: 1rem;
       padding-top: 10px;
@@ -86,23 +107,49 @@
     left: -50px;
     top: 35px;
     font-weight: bold;
-    /* background: red; */
+    background: #fff;
     width: 20%;
-    height: 40px;
+    height: 30px;
+    span {
+      margin: 0 10px;
+    }
+    /*  &:hover{
+      transform: translateX(-50px);
+      transition: 0.3s ease-in-out;
+    } */
+  }
+  .menu_price-checkbox {
+    position: relative;
+    /* right: 40px; */
+    right: 110px;
+    background-color: $tertiaire;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    overflow: hidden;
+
+    /*  &:hover{
+      transform: translateX(-50px);
+      transition: 0.3s ease-in-out;
+    } */
+  }
+  .btn-circle {
+    transform: rotate(-180deg);
   }
 }
 
-.aside__button.aside__button:hover {
-   background: #fff; 
-   box-shadow: 2px 2px 10px 2px #d6d5d6; 
+i.fas.fa-check-circle {
+  position: relative;
+  top: 25px;
+  color: #fff;
+  padding: 0px 20px;
+  opacity: 1;
 }
 
-
-.btn_order{
+.btn_order {
   display: flex;
   width: 100%;
   height: 100px;
-  .commander{
+  .commander {
     @include btn_color;
     margin: auto;
     a {
@@ -110,4 +157,9 @@
       font-family: $font-page;
     }
   }
+}
+
+.aside__button.aside__button:hover {
+  background: #fff;
+  box-shadow: 2px 2px 10px 2px #d6d5d6;
 }
