@@ -87,6 +87,10 @@ h4 {
   height: auto;
 }
 
+h2#restaurant{
+  margin-bottom: 20px;
+}
+
 .card {
   display: flex;
   flex-direction: column;
@@ -104,6 +108,10 @@ h4 {
     margin: 0 auto;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    &:hover {
+      transform: scale(1.03, 1.03);
+      transition: 2s;
+    }
   }
   .card_info {
     position: absolute;
@@ -126,29 +134,25 @@ h4 {
 
 .card_body {
   position: relative;
-
   .like {
     position: relative;
     margin-right: 22px;
     margin-top: 4px;
-  }
-  .like i {
+  } i {
     position: absolute;
     right: 0;
-    bottom: 15px;
+    bottom: 25px;
     color: #9d9d9d;
     font-size: 24px;
     transition: 0.3s 0s ease-in-out;
     &:hover {
       opacity: 0;
     }
-  }
-
-  .like .hover-icon {
+  }.hover-icon {
     position: absolute;
     right: 0;
     opacity: 0;
-    bottom: 15px;
+    bottom: 25px;
     &:hover {
       background: linear-gradient(#9356dc, #ff79da);
       -webkit-text-fill-color: transparent;
