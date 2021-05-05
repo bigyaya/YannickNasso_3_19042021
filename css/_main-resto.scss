@@ -151,6 +151,7 @@ i.fas.fa-check-circle {
   display: flex;
   width: 100%;
   height: 100px;
+  text-align: center;
   .commander {
     @include btn_color;
     margin: auto;
