@@ -22,7 +22,7 @@ h4 {
   margin-top: 20px;
 }
 
-.aside__button{
+.aside__button {
   flex: 1 0 auto;
   margin-bottom: 20px;
   text-decoration: none;
@@ -36,7 +36,7 @@ h4 {
   font-weight: bold;
   padding: 20px 15px;
   box-shadow: 0 5px 15px 0 #afafafb0;
-  transition:  0.2s;
+  transition: 0.2s;
   &.btn-hover:hover {
     background: #ff79d97a;
     box-shadow: 2px 2px 10px 2px #e4d5f6;
@@ -68,8 +68,6 @@ h4 {
   }
 }
 
-
-
 .fa,
 .fas {
   font-weight: 900;
@@ -88,7 +86,7 @@ h4 {
   height: auto;
 }
 
-h2#restaurant{
+h2#restaurant {
   margin-bottom: 20px;
 }
 
@@ -139,7 +137,8 @@ h2#restaurant{
     position: relative;
     margin-right: 22px;
     margin-top: 4px;
-  } i {
+  }
+  i {
     position: absolute;
     right: 0;
     bottom: 25px;
@@ -149,7 +148,8 @@ h2#restaurant{
     &:hover {
       opacity: 0;
     }
-  }.hover-icon {
+  }
+  .hover-icon {
     position: absolute;
     right: 0;
     opacity: 0;
@@ -175,7 +175,7 @@ h2#restaurant{
 }
 
 @media screen and (min-width: 1024px) {
-  h2{
+  h2 {
     padding-bottom: 20px;
   }
   .aside__step {
@@ -194,7 +194,7 @@ h2#restaurant{
       font-size: 18px;
     }
   }
- 
+
   .card_container {
     display: flex;
     flex-direction: column;

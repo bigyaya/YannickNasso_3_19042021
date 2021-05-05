@@ -45,10 +45,9 @@ i.fas.fa-arrow-left {
   }
 }
 
+/* ANIMATION */
 
-                      /* ANIMATION */
-
- /*  FadeIn   */                  
+/*  FadeIn   */
 
 .fade_in {
   animation: fadein 2s 2s;
@@ -118,7 +117,6 @@ i.fas.fa-arrow-left {
   }
 }
 
-
 .loader-bars:after {
   content: "";
   display: inline-block;
@@ -166,7 +164,6 @@ i.fas.fa-arrow-left {
   }
 }
 
-
 @keyframes grow {
   0% {
     transform: scaleY(0);
@@ -182,16 +179,13 @@ i.fas.fa-arrow-left {
   }
 }
 
-
 /* Checkbox scale */
 
 @keyframes checkbox {
   0% {
-    transform: scaleX(0)
+    transform: scaleX(0);
   }
   100% {
     transform: scaleX(1);
   }
-  
 }
-

@@ -95,7 +95,7 @@ i.fas.fa-arrow-left {
   left: 0;
   width: 10px;
   height: 30px;
-  background: #9356DC;
+  background: #9356dc;
   animation: grow 1s linear infinite; }
 
 .loader-bars:before {
@@ -106,7 +106,7 @@ i.fas.fa-arrow-left {
   left: 15px;
   width: 10px;
   height: 30px;
-  background: #99E2D0;
+  background: #99e2d0;
   animation: grow 1s linear -0.5s infinite; }
 
 .loader-bars span {
@@ -117,7 +117,7 @@ i.fas.fa-arrow-left {
   left: 30px;
   width: 10px;
   height: 30px;
-  background: #FF79DA;
+  background: #ff79da;
   animation: grow 1s linear -0.1s infinite; }
 
 @keyframes load {
@@ -238,7 +238,7 @@ i.fas.fa-arrow-left {
   left: 0;
   width: 10px;
   height: 30px;
-  background: #9356DC;
+  background: #9356dc;
   animation: grow 1s linear infinite; }
 
 .loader-bars:before {
@@ -249,7 +249,7 @@ i.fas.fa-arrow-left {
   left: 15px;
   width: 10px;
   height: 30px;
-  background: #99E2D0;
+  background: #99e2d0;
   animation: grow 1s linear -0.5s infinite; }
 
 .loader-bars span {
@@ -260,7 +260,7 @@ i.fas.fa-arrow-left {
   left: 30px;
   width: 10px;
   height: 30px;
-  background: #FF79DA;
+  background: #ff79da;
   animation: grow 1s linear -0.1s infinite; }
 
 @keyframes load {
@@ -361,7 +361,7 @@ i.fa-map-marker-alt {
     border-radius: 30px;
     border: transparent;
     margin: 0 auto;
-    background: linear-gradient(to top, #9356DC, #FF79DA);
+    background: linear-gradient(to top, #9356dc, #ff79da);
     color: #fff;
     letter-spacing: 0.03rem;
     box-shadow: 2px 4px 7px 0px #c0bfbf; }
@@ -372,7 +372,7 @@ i.fa-map-marker-alt {
 
 @media screen and (min-width: 680px) {
   .logo {
-    background-color: #99E2D0; }
+    background-color: #99e2d0; }
 
   .localisation {
     display: none; }
@@ -384,7 +384,7 @@ i.fa-map-marker-alt {
     .hero .btn_hero {
       font-size: 1rem;
       width: auto;
-      background: #9356DC;
+      background: #9356dc;
       box-shadow: 2px 2px 5px 1px #242424; }
       .hero .btn_hero:hover {
         text-decoration: underline; }
@@ -524,8 +524,8 @@ h2#restaurant {
     text-align: center;
     padding-top: 5px;
     color: #277460;
-    background: #99E2D0;
-    border: solid 1px #99E2D0;
+    background: #99e2d0;
+    border: solid 1px #99e2d0;
     font-size: 0.9rem;
     border-radius: 2px; }
   .card:last-child {
@@ -780,7 +780,7 @@ i.fas.fa-arrow-left {
   left: 0;
   width: 10px;
   height: 30px;
-  background: #9356DC;
+  background: #9356dc;
   animation: grow 1s linear infinite; }
 
 .loader-bars:before {
@@ -791,7 +791,7 @@ i.fas.fa-arrow-left {
   left: 15px;
   width: 10px;
   height: 30px;
-  background: #99E2D0;
+  background: #99e2d0;
   animation: grow 1s linear -0.5s infinite; }
 
 .loader-bars span {
@@ -802,7 +802,7 @@ i.fas.fa-arrow-left {
   left: 30px;
   width: 10px;
   height: 30px;
-  background: #FF79DA;
+  background: #ff79da;
   animation: grow 1s linear -0.1s infinite; }
 
 @keyframes load {
@@ -912,7 +912,6 @@ footer h2, footer .menu_container h2.plats, .menu_container footer h2.plats, foo
   .footer_link {
     align-items: center; } }
 .main {
-  /* position: absolute; */
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   background: #f6f6f6;
@@ -949,7 +948,7 @@ footer h2, footer .menu_container h2.plats, .menu_container footer h2.plats, foo
       display: inline-block;
       width: 55px;
       height: 4px;
-      background: #99E2D0; }
+      background: #99e2d0; }
   .menu_container h2.plats::after {
     right: 55px; }
   .menu_container h2.dessert::after {
@@ -961,17 +960,13 @@ footer h2, footer .menu_container h2.plats, .menu_container footer h2.plats, foo
   width: 100%;
   padding-bottom: 20px; }
   .menu_card:hover .menu_price {
-    /* animation: price 0.3s ease-out 1; */
     transform: translateX(-60px);
     transition: 0.5s ease-out; }
   .menu_card:hover .menu_price-checkbox {
     animation: checkbox 0.5s ease-out forwards;
     transform: scale(0);
     transform-origin: right;
-    overflow: visible;
-    /* transform: translateX(-70px);
-    transition: 0.3s ease-out;
-    overflow: visible; */ }
+    overflow: visible; }
   .menu_card:hover .btn-circle {
     animation: check ease-out;
     transform: rotate(0deg);
@@ -1007,24 +1002,17 @@ footer h2, footer .menu_container h2.plats, .menu_container footer h2.plats, foo
     background: #fff;
     width: 20%;
     height: 30px;
-    /*  &:hover{
-      transform: translateX(-50px);
-      transition: 0.3s ease-in-out;
-    } */ }
+    cursor: pointer; }
     .menu_card .menu_price span {
       margin: 0 10px; }
   .menu_card .menu_price-checkbox {
     position: relative;
-    /* right: 40px; */
     right: 110px;
-    background-color: #99E2D0;
+    background-color: #99e2d0;
     border-bottom-right-radius: 15px;
     border-top-right-radius: 15px;
     overflow: hidden;
-    /*  &:hover{
-      transform: translateX(-50px);
-      transition: 0.3s ease-in-out;
-    } */ }
+    cursor: pointer; }
   .menu_card .btn-circle {
     transform: rotate(-180deg); }
 
@@ -1046,7 +1034,7 @@ i.fas.fa-check-circle {
     border-radius: 30px;
     border: transparent;
     margin: 0 auto;
-    background: linear-gradient(to top, #9356DC, #FF79DA);
+    background: linear-gradient(to top, #9356dc, #ff79da);
     color: #fff;
     letter-spacing: 0.03rem;
     box-shadow: 2px 4px 7px 0px #c0bfbf;
@@ -1167,7 +1155,7 @@ i.fas.fa-arrow-left {
   left: 0;
   width: 10px;
   height: 30px;
-  background: #9356DC;
+  background: #9356dc;
   animation: grow 1s linear infinite; }
 
 .loader-bars:before {
@@ -1178,7 +1166,7 @@ i.fas.fa-arrow-left {
   left: 15px;
   width: 10px;
   height: 30px;
-  background: #99E2D0;
+  background: #99e2d0;
   animation: grow 1s linear -0.5s infinite; }
 
 .loader-bars span {
@@ -1189,7 +1177,7 @@ i.fas.fa-arrow-left {
   left: 30px;
   width: 10px;
   height: 30px;
-  background: #FF79DA;
+  background: #ff79da;
   animation: grow 1s linear -0.1s infinite; }
 
 @keyframes load {
