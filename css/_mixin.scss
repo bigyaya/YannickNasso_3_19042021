@@ -3,14 +3,19 @@
   flex-direction: row;
   justify-content: center;
   padding: 20px 107px 15px 107px;
-
   img {
     width: 165px;
   }
 }
 
-@mixin padMain(){
-  margin-top: -50px ;
+@mixin ellipsis() {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@mixin padMain() {
+  margin-top: -50px;
   padding: 0 20px 0 20px;
   width: 100%;
   height: auto;
@@ -33,16 +38,16 @@
   box-shadow: 0 5px 15px 0 #c3c3c3;
 }
 
-@mixin btn_color(){
+@mixin btn_color() {
   padding: 15px;
-    width: 220px;
-    border-radius: 30px;
-    border: transparent;
-    margin: 0 auto;
-    background: linear-gradient(to top, $primaire, $secondaire);
-    color: #fff;
-    letter-spacing: 0.03rem;
-    box-shadow: $shadow;
+  width: 220px;
+  border-radius: 30px;
+  border: transparent;
+  margin: 0 auto;
+  background: linear-gradient(to top, $primaire, $secondaire);
+  color: #fff;
+  letter-spacing: 0.03rem;
+  box-shadow: $shadow;
 }
 
 /* 

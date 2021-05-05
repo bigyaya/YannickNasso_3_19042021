@@ -74,6 +74,9 @@ i.fa-map-marker-alt {
     box-shadow: $shadow;
     a {
       padding: 10px 10px;
+      &:hover{
+        text-decoration: underline;
+      }
     }
   }
 }

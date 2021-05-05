@@ -45,6 +45,11 @@ i.fas.fa-arrow-left {
   }
 }
 
+
+                      /* ANIMATION */
+
+ /*  FadeIn   */                  
+
 .fade_in {
   animation: fadein 2s 2s;
 }
@@ -90,6 +95,8 @@ i.fas.fa-arrow-left {
   }
 }
 
+/* Loader */
+
 .loader {
   position: fixed;
   top: 0;
@@ -99,27 +106,18 @@ i.fas.fa-arrow-left {
   background-color: rgb(255, 255, 255);
   z-index: 10;
   animation: load 2s forwards;
-}
-
-.loader_container {
-  position: absolute;
-  width: 0vw;
-  height: 0vw;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-}
-
-@keyframes load {
-  0% {
-    visibility: visible;
-  }
-  100% {
-    visibility: hidden;
+  .loader_container {
+    position: absolute;
+    width: 0vw;
+    height: 0vw;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
   }
 }
+
 
 .loader-bars:after {
   content: "";
@@ -159,6 +157,16 @@ i.fas.fa-arrow-left {
   animation: grow 1s linear -0.1s infinite;
 }
 
+@keyframes load {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+
+
 @keyframes grow {
   0% {
     transform: scaleY(0);
@@ -173,15 +181,9 @@ i.fas.fa-arrow-left {
     opacity: 0;
   }
 }
-/* 
-@keyframes price {
-  0%{
-    transform: translateX(0px);
-  }
-  100%{
-    transform: translateX(-50px);
-  }
-} */
+
+
+/* Checkbox scale */
 
 @keyframes checkbox {
   0% {
