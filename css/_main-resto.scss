@@ -62,12 +62,14 @@
   flex-direction: row;
   width: 100%;
   padding-bottom: 20px;
+
   &:hover .menu_price {
     transform: translateX(-60px);
     transition: 0.5s ease-out;
   }
   &:hover .menu_price-checkbox {
     animation: checkbox 0.5s ease-out forwards;
+    animation-fill-mode: both;
     transform: scale(0);
     transform-origin: right;
     overflow: visible;
@@ -77,27 +79,7 @@
     transform: rotate(0deg);
     transition: transform 0.6s;
   }
-  .menu_title {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height: 75px;
-    background: #fff;
-    cursor: pointer;
-    @include ellipsis();
-    h3 {
-      font-size: 1rem;
-      padding-top: 10px;
-      @include ellipsis();
-    }
-    h4 {
-      font-size: 0.95rem;
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      width: 75%;
-    }
-  }
+
   .menu_price {
     display: inline-block;
     position: relative;
@@ -123,6 +105,27 @@
   }
   .btn-circle {
     transform: rotate(-180deg);
+  }
+  .menu_title {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 75px;
+    background: #fff;
+    cursor: pointer;
+    @include ellipsis();
+    h3 {
+      font-size: 1rem;
+      padding-top: 10px;
+      @include ellipsis();
+    }
+    h4 {
+      font-size: 0.95rem;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      width: 75%;
+    }
   }
 }
 
@@ -154,6 +157,22 @@ i.fas.fa-check-circle {
   box-shadow: 2px 2px 10px 2px #d6d5d6;
 }
 
+@media screen and (min-width: 680px) {
+  .menu_container {
+    width: 70%;
+    margin: 0 auto;
+    .menu_title h3 {
+      font-size: 1.3rem;
+    }
+    .menu_title h4 {
+      font-size: 1.05rem;
+    }
+    h2 {
+      padding: 45px;
+    }
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .main {
     width: 70%;
@@ -164,6 +183,6 @@ i.fas.fa-check-circle {
   i.fas.fa-arrow-left::before {
     position: relative;
     font-size: 1.5rem;
-    right: 400px;
+    right: 50px;
   }
 }

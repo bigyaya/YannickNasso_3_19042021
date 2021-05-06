@@ -167,28 +167,28 @@ h2#restaurant {
 @media screen and (min-width: 680px) {
   h2 {
     text-align: center;
+    padding-bottom: 20px;
   }
 
   .aside__step {
     background-color: rgba(121, 255, 226, 0.5);
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  h2 {
-    padding-bottom: 20px;
-  }
-  .aside__step {
-    margin: 0 305px;
-    .aside__circle {
-      /* display: none; */
-      left: 330px;
-    }
     .aside__button:first-child {
       margin-top: 50px;
     }
     .aside__button:last-child {
       margin-bottom: 50px;
+    }
+    .aside__texte {
+      font-size: 1.1rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .aside__step {
+    margin: 0 305px;
+    .aside__circle {
+      left: 330px;
     }
     .aside__texte {
       font-size: 18px;
