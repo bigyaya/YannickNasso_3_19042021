@@ -15,7 +15,8 @@
 }
 
 @mixin padMain() {
-  margin-top: -50px;
+  position: relative;
+  bottom: 55px;
   padding: 0 20px 0 20px;
   width: 100%;
   height: auto;

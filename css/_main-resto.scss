@@ -83,7 +83,7 @@
   .menu_price {
     display: inline-block;
     position: relative;
-    left: -50px;
+    right: 50px;
     top: 35px;
     font-weight: bold;
     background: #fff;
@@ -106,26 +106,28 @@
   .btn-circle {
     transform: rotate(-180deg);
   }
-  .menu_title {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height: 75px;
-    background: #fff;
-    cursor: pointer;
+  
+}
+
+.menu_title {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 75px;
+  background: #fff;
+  cursor: pointer;
+  @include ellipsis();
+  h3 {
+    width: 65%;
+    padding-top: 15px;
     @include ellipsis();
-    h3 {
-      font-size: 1rem;
-      padding-top: 10px;
-      @include ellipsis();
-    }
-    h4 {
-      font-size: 0.95rem;
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      width: 75%;
-    }
+  }
+  h4 {
+    font-size: 0.95rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 60%;
   }
 }
 
@@ -177,7 +179,6 @@ i.fas.fa-check-circle {
   .main {
     width: 70%;
     margin: auto;
-    margin-top: -50px;
     padding: 0 40px;
   }
   i.fas.fa-arrow-left::before {

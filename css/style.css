@@ -914,7 +914,8 @@ footer h2, footer .menu_container h2.plats, .menu_container footer h2.plats, foo
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   background: #f6f6f6;
-  margin-top: -50px;
+  position: relative;
+  bottom: 55px;
   padding: 0 20px 0 20px;
   width: 100%;
   height: auto;
@@ -974,7 +975,7 @@ footer h2, footer .menu_container h2.plats, .menu_container footer h2.plats, foo
   .menu_card .menu_price {
     display: inline-block;
     position: relative;
-    left: -50px;
+    right: 50px;
     top: 35px;
     font-weight: bold;
     background: #fff;
@@ -993,28 +994,29 @@ footer h2, footer .menu_container h2.plats, .menu_container footer h2.plats, foo
     cursor: pointer; }
   .menu_card .btn-circle {
     transform: rotate(-180deg); }
-  .menu_card .menu_title {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height: 75px;
-    background: #fff;
-    cursor: pointer;
+
+.menu_title {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 75px;
+  background: #fff;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+  .menu_title h3 {
+    width: 65%;
+    padding-top: 15px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis; }
-    .menu_card .menu_title h3 {
-      font-size: 1rem;
-      padding-top: 10px;
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis; }
-    .menu_card .menu_title h4 {
-      font-size: 0.95rem;
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      width: 75%; }
+  .menu_title h4 {
+    font-size: 0.95rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 60%; }
 
 i.fas.fa-check-circle {
   position: relative;
@@ -1061,7 +1063,6 @@ i.fas.fa-check-circle {
   .main {
     width: 70%;
     margin: auto;
-    margin-top: -50px;
     padding: 0 40px; }
 
   i.fas.fa-arrow-left::before {
