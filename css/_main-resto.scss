@@ -4,6 +4,9 @@
 @import "mixin";
 @import "footer";
 
+main {
+  background: #f6f6f6;
+}
 .main {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -28,7 +31,7 @@
   justify-content: flex-start;
 
   h2.entree {
-    margin: 0;
+    margin: 0 20px;
     padding-bottom: 30px;
     text-transform: uppercase;
     font-size: 1.2rem;
@@ -106,7 +109,6 @@
   .btn-circle {
     transform: rotate(-180deg);
   }
-  
 }
 
 .menu_title {
@@ -177,14 +179,17 @@ i.fas.fa-check-circle {
 }
 
 @media screen and (min-width: 1024px) {
-  .main {
-    width: 70%;
-    margin: auto;
-    padding: 0 40px;
-  }
   i.fas.fa-arrow-left::before {
     position: relative;
     font-size: 1.5rem;
     right: 50px;
+  }
+  main {
+    width: 70%;
+    margin: auto;
+    background: #f6f6f6;
+  }
+  .main {
+    width: 100%;
   }
 }

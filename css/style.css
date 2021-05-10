@@ -15,8 +15,7 @@ body {
   color: #000;
   width: 100%;
   height: auto;
-  line-height: 1.625;
-  background: #f6f6f6; }
+  line-height: 1.625; }
 
 a,
 a:visited {
@@ -159,8 +158,7 @@ body {
   color: #000;
   width: 100%;
   height: auto;
-  line-height: 1.625;
-  background: #f6f6f6; }
+  line-height: 1.625; }
 
 a,
 a:visited {
@@ -701,8 +699,7 @@ body {
   color: #000;
   width: 100%;
   height: auto;
-  line-height: 1.625;
-  background: #f6f6f6; }
+  line-height: 1.625; }
 
 a,
 a:visited {
@@ -913,6 +910,9 @@ footer h2, footer .menu_container h2.plats, .menu_container footer h2.plats, foo
 
   .footer_link {
     align-items: center; } }
+main {
+  background: #f6f6f6; }
+
 .main {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -939,7 +939,7 @@ footer h2, footer .menu_container h2.plats, .menu_container footer h2.plats, foo
   flex-direction: column;
   justify-content: flex-start; }
   .menu_container h2.entree, .menu_container h2.plats, .menu_container h2.dessert {
-    margin: 0;
+    margin: 0 20px;
     padding-bottom: 30px;
     text-transform: uppercase;
     font-size: 1.2rem; }
@@ -1064,15 +1064,18 @@ i.fas.fa-check-circle {
     .menu_container h2, .menu_container h2.plats, .menu_container h2.dessert {
       padding: 45px; } }
 @media screen and (min-width: 1024px) {
-  .main {
-    width: 70%;
-    margin: auto;
-    padding: 0 40px; }
-
   i.fas.fa-arrow-left::before {
     position: relative;
     font-size: 1.5rem;
-    right: 50px; } }
+    right: 50px; }
+
+  main {
+    width: 70%;
+    margin: auto;
+    background: #f6f6f6; }
+
+  .main {
+    width: 100%; } }
 *,
 *:before,
 *:after {
@@ -1090,8 +1093,7 @@ body {
   color: #000;
   width: 100%;
   height: auto;
-  line-height: 1.625;
-  background: #f6f6f6; }
+  line-height: 1.625; }
 
 a,
 a:visited {
