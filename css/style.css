@@ -910,16 +910,16 @@ footer h2, footer .menu_container h2.plats, .menu_container footer h2.plats, foo
 
   .footer_link {
     align-items: center; } }
+/* 
 main {
-  background: #f6f6f6; }
-
+  background: #f6f6f6;
+} */
 .main {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   background: #f6f6f6;
-  position: relative;
-  bottom: 55px;
-  padding: 0 20px 0 20px;
+  margin-top: -25px;
+  padding: 0 20px 25px 20px;
   width: 100%;
   height: auto;
   z-index: 1; }
@@ -1069,13 +1069,11 @@ i.fas.fa-check-circle {
     font-size: 1.5rem;
     right: 50px; }
 
-  main {
+  .main {
     width: 70%;
     margin: auto;
-    background: #f6f6f6; }
-
-  .main {
-    width: 100%; } }
+    margin-top: -25px;
+    background: #f6f6f6; } }
 *,
 *:before,
 *:after {
